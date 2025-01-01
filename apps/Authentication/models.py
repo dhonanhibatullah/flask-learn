@@ -1,4 +1,3 @@
-from pymongo.database import Database
 from utils.password import pass_hasher
 
 class UserModel:
