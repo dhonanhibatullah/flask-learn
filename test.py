@@ -4,7 +4,7 @@ BASE_URL = 'http://localhost:5000'
 
 def test_auth_register():
     response = requests.post(
-        url = f'{BASE_URL}/auth/register', 
+        url = f'{BASE_URL}/api/auth/register', 
         json = {
             'username': 'john_doe_001',
             'password': 'john_doe_001',
@@ -20,7 +20,7 @@ def test_auth_register():
 
 def test_auth_login():
     response = requests.post(
-        url = f'{BASE_URL}/auth/login', 
+        url = f'{BASE_URL}/api/auth/login', 
         json = {
             'username': 'john_doe_001',
             'password': 'john_doe_001'
